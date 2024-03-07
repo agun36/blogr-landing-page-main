@@ -24,13 +24,16 @@ const MenuDesktop = () => {
     return (
         <ChakraProvider>
              <Box
+                    position={'relative'}
+                    zIndex={1}
                     bgImage={`linear-gradient(0deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(${bgPattern})`}
-                    bgPosition='center center'
+                    bgPosition='center'
                     borderBottomLeftRadius={'100px'}
                     // bgSize={'cover, cover, cover'}
                     h={{ base: '100vh', md: '100vh', xl: '80vh', '2xl': '80vh' }}
                 >
                     {/* Desktop screen */}
+                    {/* <Image src={bgPattern}/> */}
                     <Box
                         display={{ base: 'block', md: 'flex', xl: 'flex', '2xl': 'flex' }}
                         padding={'4rem'}
@@ -40,6 +43,7 @@ const MenuDesktop = () => {
 
                         <Box p='2'>
                             <Image src={logo} alt='Dan Abramov' />
+                            
                         </Box>
 
 
@@ -335,6 +339,18 @@ const MenuDesktop = () => {
                             >Learn More</Button>
                         </ButtonGroup>
                     </Box>
+                    <Image
+                     src={bgPattern} 
+                     alt='Dan Abramov'
+                     position={"absolute"}
+                     backgroundSize={"cover cover"}
+                     width={"300rem"}
+                     height={"100%"}
+                    //  top={0}
+                    left={"10rem"}
+                     bottom={"-4rem"}
+                     zIndex={-1}
+                     />
                 </Box>
         </ChakraProvider>
     );
