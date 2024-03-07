@@ -286,7 +286,7 @@ const MenuDesktop = () => {
                             fontStyle={"normal"}
                         >
                             <Button color={'white'} variant={Link}>Login</Button>
-                            <Button paddingInline={'2rem'} color={'white'} _hover={{ background: 'hsl(355, 100%, 74%)', color: 'white', borderRadius: '3rem' }} variant={Link} >Sign Up</Button>
+                            <Button paddingInline={'2rem'} background= 'hsl(0, 0%, 100%)'color='hsl(356, 100%, 66%)' borderRadius= '3rem' _hover={{ background: 'hsl(355, 100%, 74%)', color: 'white', borderRadius: '3rem' }} variant={Link} >Sign Up</Button>
                         </ButtonGroup>
 
 
@@ -330,7 +330,7 @@ const MenuDesktop = () => {
                             fontFamily={"Overpass, sans-serif"}
                             fontOpticalSizing={"auto"}
                             fontWeight={"600"}
-                            fontSize={"1.5rem"}
+                            fontSize={"1.5rem"}     
                             fontStyle={"normal"}
                                 paddingInline={'2rem'}
                                 color={'white'}
