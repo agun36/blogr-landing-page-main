@@ -322,9 +322,11 @@ const MenuDesktop = () => {
                             fontWeight={"600"}
                             fontStyle={"extrabold"}
                             fontSize={"1.5rem"}
-                                color={'white'}
-                                variant={Link}
-                                _hover={{ background: 'hsl(355, 100%, 74%)', color: 'white', borderRadius: '3rem' }}
+                            background= 'hsl(0, 0%, 100%)'
+                            color='hsl(356, 100%, 66%)'
+                            borderRadius= '3rem'
+                            variant={Link}
+                            _hover={{ background: 'hsl(355, 100%, 74%)', color: 'white', borderRadius: '3rem' }}
                             >Start for Free</Button>
                             <Button
                             fontFamily={"Overpass, sans-serif"}
